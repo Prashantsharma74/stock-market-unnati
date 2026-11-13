@@ -1,0 +1,20 @@
+# Optional local services. The API boots without Docker.
+# MONGODB_URI=memory uses an in-memory database.
+# An empty REDIS_URL uses a labeled in-memory quote cache and does not require Redis.
+services:
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - finora_mongo:/data/db
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    volumes:
+      - finora_redis:/data
+
+volumes:
+  finora_mongo:
+  finora_redis:

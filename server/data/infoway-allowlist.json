@@ -1,0 +1,20 @@
+{
+  "note": "Auto-generated permitted explore symbols for this Infoway API key.",
+  "generatedAt": "2026-11-13T15:06:08.425Z",
+  "probed": 20,
+  "permitted": 2,
+  "india": [
+    {
+      "symbol": "RELIANCE",
+      "exchange": "IN",
+      "label": "Reliance Industries"
+    }
+  ],
+  "us": [
+    {
+      "symbol": "AAPL",
+      "exchange": "US",
+      "label": "Apple"
+    }
+  ]
+}

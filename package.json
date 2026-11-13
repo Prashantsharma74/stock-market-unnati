@@ -1,0 +1,14 @@
+{
+  "name": "finora",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Unnati — Indian investment discovery and simulation platform",
+  "scripts": {
+    "dev": "concurrently -n server,client -c green,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "typecheck": "npm run typecheck --prefix server && npm run typecheck --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
